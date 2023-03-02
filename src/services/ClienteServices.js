@@ -1,7 +1,8 @@
 import axios from "axios";
 
-const BACKEND_URL = "https://unicentro-api-rest.herokuapp.com/api/cliente/covid";
-// const BACKEND_URL = "http://192.168.1.8:7788/api/cliente/covid";
+const BACKEND_URL = "https://unicentro-api-rest.herokuapp.com/unicentro-service/v1/aforos";
+
+// const BACKEND_URL = "http://192.168.1.8:7788/unicentro-service/v1/aforos";
 
 
 

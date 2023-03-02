@@ -1,5 +1,4 @@
 import React from "react";
-import AppLoading from 'expo-app-loading';
 import { useFonts, Inter_900Black } from '@expo-google-fonts/inter';
 import { Center, NativeBaseProvider } from "native-base";
 
@@ -12,7 +11,7 @@ export default () => {
 
   if (!fontsLoaded) 
   {
-    return <AppLoading />;
+    return null;
   } 
   else 
   {

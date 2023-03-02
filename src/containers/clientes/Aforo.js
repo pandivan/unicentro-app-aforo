@@ -41,9 +41,7 @@ function Aforo()
   
   useEffect(() => 
   {
-    console.log("useEffect Aforo Máximo");
-
-
+    
     /**
      * Metodo que permite cargar el aforo máximo desde el API-REST
      */
@@ -52,8 +50,6 @@ function Aforo()
       try 
       {
         let {success, aforoMaximoBD} = await aforoServices.getAforoMaximo();
-
-        console.log("Aforo Máximo BD: " + aforoMaximoBD);
 
         if(success)
         {
@@ -102,6 +98,7 @@ function Aforo()
     const resultado = await aforoServices.registrarIngresoSalida("salidas");
 
     // console.log("Consulta Aforo");
+    // console.log(resultado);
     // console.log(JSON.stringify(resultado.aforoClientes));
 
     if (resultado.success && resultado.aforoClientes >= 0) 

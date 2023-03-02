@@ -1,8 +1,9 @@
 import axios from "axios";
 
 
-const BACKEND_URL = "https://unicentro-api-rest.herokuapp.com/api/aforos";
-// const BACKEND_URL = "http://192.168.1.8:7788/api/aforos";
+const BACKEND_URL = "https://unicentro-api-rest.herokuapp.com/unicentro-service/v1/aforos";
+
+// const BACKEND_URL = "http://192.168.1.8:7788/unicentro-service/v1/aforos";
 
 
 
@@ -38,7 +39,6 @@ const registrarIngresoSalida = async (registro) =>
    {
      let respuesta = null;
  
-     console.log(`${BACKEND_URL}/maximos`);
      respuesta = await axios.get(`${BACKEND_URL}/maximos`);
  
      return { success: ("" !== respuesta.data), aforoMaximoBD: respuesta.data };
