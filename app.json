@@ -30,6 +30,11 @@
       "ios",
       "android"
     ],
-    "privacy": "public"
+    "privacy": "public",
+    "extra": {
+      "eas": {
+        "projectId": "94bc5bde-a548-476b-a602-61ea5a26fcd0"
+      }
+    }
   }
 }
